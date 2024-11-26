@@ -55,3 +55,36 @@ ES1887S Pin				Destination
 
 76 (XO)					
 77 (XI)					JAUDIO.70
+
+22 (AMODE)				R15 - 10k PD to GND (Read-Sequence-Key configured)
+
+19 (VOLDN)				JAUDIO.16
+20 (VOLUP)				JAUDIO.14
+21 (MUTE)				JAUDIO.12
+
+33 (FOUT_L)				C90 (which goes to CIN_L) Also has cap to gnd
+34 (FOUT_R)				C32 (which goes to CIN_R) Also has cap to gnd
+
+39 (MIC)				
+
+4,24,57,75 (VDDD)		JAUDIO.80,79,78,77,75
+5,23,51,58,74 (GNDD)	JAUDIO.5,6,10,11,18,21,29,37,38,47,48,55,58,63,68,71,72,73,74
+
+/------------------------\
+|     Other signals      |
+\------------------------/
+
+JAUDIO.1				U5.5 (LM4861 pin 5, Vo1)
+JAUDIO.3				U5.8 (LM4861 pin 8, Vo2)
+JAUDIO.2				U6.5 (LM4861)
+JAUDIO.4				U6.8 (LM4861)
+
+
+
+U1 - NJM2904
+U2 - MAX884
+U3 - MAX884
+U4 - LM4880
+U5 - LM4861
+U6 - LM4861
+Q1 - Si9434
